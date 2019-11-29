@@ -1,14 +1,16 @@
 @import "../partial/base";
 
-header {
-	// background: rgba(88, 107, 164, .9);
-}
-
+/* Header */
 .site-intro {
+	@include display-flex(flex);
+	@include justify-content(center);
+	@include align-items(center);
 	height: 100vh;
 	width: 100%;
 	background: url("../img/background.jpg") center bottom no-repeat;
-	background-size: cover;
+	@include background-size(cover);
+	@include box-shadow(0 0 4px 2px rgba(0,0,0,.6), 0 0 4px 5px rgba(0,0,0,.2), 0 0 4px 8px rgba(0,0,0,.1));
+	z-index: 999;
 
 	h1 {
 		margin: 0;
@@ -16,15 +18,94 @@ header {
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
 		text-align: center;
-		@include text-shadow(3px 3px 5px rgba(0,0,0,.8));
 		color: white;
+		@include text-shadow(3px 3px 5px rgba(0,0,0,.8));
 
 		@media (min-width: 768px) {
 			font-size: 5rem;
 		}
-
 		@media (min-width: 992px) {
 		    font-size: 9rem;
+		}
+	}
+
+	/* Arrow container */
+	.arrow-wrapper {
+		position: absolute;
+		bottom: 5%;
+		z-index: 999;
+
+		.arrow {
+			display: block;
+			width: 0;
+			height: 0;
+			margin: 5px;
+			border-right: 10px solid transparent;
+			border-left: 10px solid transparent;
+			border-bottom: 10px solid white;
+			@include transform(rotate(180deg));
+			@include animation(UpAndDown 2.4s infinite);
+
+			&:nth-of-type(1) {
+				@include animation-delay(0s);
+			}
+
+			&:nth-of-type(2) {
+				@include animation-delay(0.16s);
+			}
+
+			&:nth-of-type(3) {
+				@include animation-delay(0.32s);
+			}
+		}
+
+		/* Arrow animation */
+		@-webkit-keyframes UpAndDown {
+			0%,
+			100% {
+				@include opacity(0);
+			}
+			50% {
+				@include opacity(1);
+			}
+		}
+		@-moz-keyframes UpAndDown {
+			0%,
+			100% {
+				@include opacity(0);
+			}
+			50% {
+				@include opacity(1);
+			}
+		}
+		@keyframes(UpAndDown) {
+			0%,
+			100% {
+				@include opacity(0);
+			}
+			50% {
+				@include opacity(1);
+			}
+		}
+	}
+}
+
+.navbar-top {
+	position: fixed;
+	padding: 2em 1.5em;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	min-height: 50px;
+	z-index: 999;
+	background: rgba(0,0,0, 1);
+
+	@media (min-width: 768px) {
+		.container {
+			@include display-flex(flex);
+			@include justify-content(space-between);
+			@include align-items(center);
 		}
 	}
 }
@@ -50,6 +131,7 @@ footer {
 		a {
 			font-size: 2rem;
 			padding: 0 0.5em;
+			color: rgba(255, 255, 255, 1);
 			@include transition(all 0.3s ease-in-out);
 
 			i {

@@ -23,7 +23,7 @@ body {
 *:before {
 	@include box-sizing(border-box);
 	@include transition(all 0.3s ease-in-out);
-	border: 1px dotted rgba(255, 255, 255, .5);
+	// border: 1px dotted rgba(255, 255, 255, .5);
 }
 
 .clearfix:after,
@@ -47,4 +47,38 @@ body {
 	@media (min-width: 1200px) {
 		width: 1170px;
 	}
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-section {
+	padding-top: 100px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-mutted {
+	color: #777;
+}
+
+.hidden {
+	display: none;
 }

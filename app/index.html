@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio">
 	<meta name="author" content="Ramzi-B">
-	<meta name="keywords" content="Développeur intégrateur Web javascript php mysql html5 css3 front-end back-end">
+    <meta name="keywords" content="Développeur intégrateur Web javascript php mysql html5 css3 front-end back-end">
     <!-- Title -->
-	<title>Ramzi.B | Développeur intégrateur Web</title>
+    <title>Ramzi.B | Développeur intégrateur Web</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <!-- Normalize CSS -->
@@ -16,21 +16,63 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="page-top">
 
-    <!-- Site intro -->
-	<header class="site-intro">
-        <h1>Developpeur web</h1>
+    <!-- Header site intro -->
+    <header class="site-intro">
+        <!-- Navigation -->
+		<div class="navbar-top">
+			<div class="container">
+
+				<!-- Site title -->
+				<div class="navbar-heading">
+					<a href="#page-top" class="page-scroll">Ramzi.B</a>
+					<!-- Button menu -->
+					<button type="button" class="navbar-toggle">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</button>
+				</div>
+
+				<nav class="navbar">
+					<!-- Dropdown menu -->
+					<div class="navbar-dropdown">
+						<a href="#about" class="page-scroll active">About</a>
+						<a href="#skills" class="page-scroll">Skills</a>
+						<a href="#work" class="page-scroll">Work</a>
+						<a href="#contact" class="page-scroll">Contact</a>
+					</div>
+				</nav>
+
+			</div>
+		</div>
+
+		<!-- Title slide -->
+		<h1><span id="myWords">Developpeur web</span></h1>
+
+		<!-- Arrows animation -->
+		<a href="#about" class="arrow-wrapper page-scroll">
+			<span class="arrow"></span>
+			<span class="arrow"></span>
+			<span class="arrow"></span>
+		</a>
     </header>
 
     <!-- Main -->
     <main class="container">
 
-        <section>
+        <!-- About section  -->
+        <section id="about"></section>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- Skills section -->
+        <section id="skills"></section>
 
-        </section>
+        <!-- Work section -->
+        <section id="work"></section>
+
+        <!-- Contact -->
+        <section id="contact"></section>
 
     </main>
 
@@ -49,6 +91,9 @@
             <a href="#">
                 <i class="fab fa-linkedin"></i>
             </a>
+            <a href="mailto:ramzi-b&#64gmx.com">
+				<i class="fas fa-envelope-square"></i>
+			</a>
         </div>
     </footer>
 
