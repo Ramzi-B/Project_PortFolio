@@ -1,0 +1,50 @@
+@import 'compass';
+
+/* Google Fonts */
+// @import url('https://fonts.googleapis.com/css?family=Teko:400,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Teko:700");
+@import "../partial/variables";
+
+/* Base */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 1.8rem;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	background-color: var(--bkg-primary);
+    color: var(--text-color);
+}
+
+*,
+*:after,
+*:before {
+	@include box-sizing(border-box);
+	@include transition(all 0.3s ease-in-out);
+	border: 1px dotted rgba(255, 255, 255, .5);
+}
+
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	display: block;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.container {
+	margin: 0 auto;
+	@media (min-width: 768px) {
+		width: 750px;
+	}
+	@media (min-width: 992px) {
+		width: 970px;
+	}
+	@media (min-width: 1200px) {
+		width: 1170px;
+	}
+}

@@ -1,17 +1,17 @@
 {
     "name": "Project_PortFolio",
     "version": "1.0.0",
-    "description": "menu",
+    "description": "Portfolio",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hackawax/menu_responsive.git"
+        "url": "git+https://github.com/Ramzi-B/Project_PortFolio.git"
     },
     "author": "Ramzi-B",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/Ramzi-B/Project_PortFolio/issues"
     },

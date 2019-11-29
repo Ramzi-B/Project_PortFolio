@@ -1,23 +1,63 @@
-@import 'compass';
-@import url('https://fonts.googleapis.com/css?family=Teko:400,700');
+@import "../partial/base";
 
-html {font-size: 62.5%;}
-
-body {
-	margin: 0 auto;
-    font-size: 1.8rem;
-    font-family: 'Teko', sans-serif;
+header {
+	// background: rgba(88, 107, 164, .9);
 }
 
-.container {
-	margin: 0 auto;
-	@media (min-width: 768px) {
-		width: 750px;
+.site-intro {
+	height: 100vh;
+	width: 100%;
+	background: url("../img/background.jpg") center bottom no-repeat;
+	background-size: cover;
+
+	h1 {
+		margin: 0;
+		font: 700 2.4rem 'Teko', Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		text-align: center;
+		@include text-shadow(3px 3px 5px rgba(0,0,0,.8));
+		color: white;
+
+		@media (min-width: 768px) {
+			font-size: 5rem;
+		}
+
+		@media (min-width: 992px) {
+		    font-size: 9rem;
+		}
 	}
-	@media (min-width: 992px) {
-		width: 970px;
+}
+
+/* Footer */
+footer {
+	@include display-flex(flex);
+	@include justify-content(space-around);
+	@include align-items(center);
+	min-height: 50px;
+	background: rgba(0,0,255,.3);
+	@include box-shadow(0 -4px 17px 1px rgba(0,0,0,.2));
+
+	.copyright {
+		p {
+			font: normal 1.4rem 'Teko', Helvetica, Arial, sans-serif;
+			margin: 0;
+			color: white;
+		}
 	}
-	@media (min-width: 1200px) {
-		width: 1170px;
+
+	.social {
+		a {
+			font-size: 2rem;
+			padding: 0 0.5em;
+			@include transition(all 0.3s ease-in-out);
+
+			i {
+				&:hover {
+					@include transform(scale(1.5));
+					color: #000;
+				}
+			}
+		}
 	}
 }
