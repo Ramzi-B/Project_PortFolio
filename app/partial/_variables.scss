@@ -1,8 +1,14 @@
 /* Variables */
 :root {
     /* Colors from https://coolors.co */
-    /* Deep Koamaru */
-    --bkg-primary: #{rgba(47, 41, 99, 1)};
-    /* Dark Salmon */
-    --text-color: #{rgba(239, 148, 108, 1)};
+
+    /* Bright yellow Crayola */
+    --bkg-primary: #{rgba(247,167,32, 1)};
+    /* Dark */
+    --text-color: #{rgba(0, 0, 0, 1)};
+    /* Royal blue */
+    --bkg-header: #{rgba(3, 37, 108, 1)};
+    --bkg-footer: #{rgba(3, 37, 108, 1)};
+    /* Denim blue */
+    --title-color: #{rgba(37, 65, 178, 1)};
 }

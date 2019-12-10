@@ -7,7 +7,6 @@
     for (var i = 0; i < navItem.length; i++) {
     	navItem[i].addEventListener('click', function() {
     		for (var i = 0; i < navItem.length; i++) {
-    			// navbarDropdown.classList.add('navbar-dropdown');
     			navItem[i].className = '';
     		}
 
@@ -18,18 +17,18 @@
     // fix Navbar top
     var navbarTop, yPos;
 
-    function yScroll() {
+    function fixNavbar() {
     	navbarTop = document.querySelector('.navbar-top');
     	yPos = window.pageYOffset;
 
     	if (yPos >= 50) {
     		navbarTop.style.padding = '0em 1em';
-    		navbarTop.style.background = '#1c293a';
+    		navbarTop.style.background = 'var(--bkg-header)';
     	} else {
     		navbarTop.style.padding = '2em 1em';
     		navbarTop.style.background = '';
     	}
     }
 
-    addEventListener('scroll', yScroll);
+    addEventListener('scroll', fixNavbar);
 })();
