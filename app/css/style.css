@@ -408,30 +408,75 @@ a {
 /* About Section */
 #about img {
   margin: 0 auto;
+  margin-bottom: 2em;
   border-radius: 50%;
   border: 8px solid rgba(0, 123, 255, 0.3);
   -moz-box-shadow: 0 0 2px 8px rgba(0, 123, 255, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
   -webkit-box-shadow: 0 0 2px 8px rgba(0, 123, 255, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
   box-shadow: 0 0 2px 8px rgba(0, 123, 255, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
 }
+@media (min-width: 992px) {
+  #about img {
+    float: left;
+    margin-right: 1.5em;
+  }
+}
 #about article {
   padding-top: 2em;
   margin: 0 0.2em;
 }
+@media (min-width: 992px) {
+  #about article {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
 #about article p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: justify;
-  color: rgba(0, 123, 255, 0.8);
+  color: black;
+}
+@media (min-width: 768px) {
+  #about article p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  #about article p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Skills section */
+#skills .skills__wrapper {
+  margin: 0 auto;
+  padding: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#skills .skills__wrapper .skills-logo {
+  width: 30%;
+  padding: 1em;
+  justify-content: center;
+}
+#skills .skills__wrapper .skills-logo img {
+  margin: 0 auto;
 }
 
 /* Contact Section */
+#contact {
+  margin: 0.1em;
+  padding-bottom: 100px;
+}
 #contact .form-group {
   margin-bottom: 1em;
 }
 #contact .form-group input {
-  font: 700 1.4rem 'Roboto', sans-serif;
+  font: 700 1.4rem 'Roboto', Helvetica, Arial, sans-serif;
   width: 100%;
-  padding: 10px 15px;
+  padding: 1em 1.5em;
   outline: 0;
   background: transparent;
   color: #726659;
@@ -451,7 +496,7 @@ a {
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
 }
 #contact .form-group textarea {
-  font: 700 1.4rem 'Roboto', sans-serif;
+  font: 700 1.4rem 'Roboto', Helvetica, Arial, sans-serif;
   width: 100%;
   height: 110px;
   padding: 1.5em;
@@ -473,12 +518,12 @@ a {
 #contact .btn {
   position: relative;
   padding: .5em 1em;
-  font: 700 1.6rem 'Teko', sans-serif;
+  font: 700 1.4rem 'Teko', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.2rem;
-  color: white;
-  border: 1px solid rgba(0, 0, 155, 0.3);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.4);
   overflow: hidden;
   background: transparent;
   -moz-border-radius: 0.4rem;
@@ -491,9 +536,9 @@ a {
 }
 #contact .btn:hover {
   color: red;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 #contact .btn:before {
   content: '';
@@ -546,11 +591,12 @@ footer {
 }
 footer .copyright p {
   font: normal 1.4rem 'Teko', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.1em;
   margin: 0;
   color: white;
 }
 footer .social a {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 0 0.5em;
   color: white;
   -moz-transition: all 0.3s ease-in-out;
