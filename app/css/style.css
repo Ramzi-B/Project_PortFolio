@@ -331,7 +331,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: #ea535a;
+  color: #f7a720;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -377,7 +377,7 @@ a {
   opacity: 1;
   height: 4px;
   width: 50%;
-  background: #f73260;
+  background: #f7a720;
 }
 @media (min-width: 768px) {
   .navbar-top .navbar,
@@ -397,7 +397,6 @@ a {
 }
 .navbar-top .navbar-dropdown {
   position: relative;
-  display: none;
 }
 @media (min-width: 768px) {
   .navbar-top .navbar-dropdown {
@@ -593,12 +592,12 @@ footer .copyright p {
   font: normal 1.4rem 'Teko', Helvetica, Arial, sans-serif;
   letter-spacing: 0.1em;
   margin: 0;
-  color: white;
+  color: #f7a720;
 }
 footer .social a {
   font-size: 1.4rem;
   padding: 0 0.5em;
-  color: white;
+  color: #f7a720;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;

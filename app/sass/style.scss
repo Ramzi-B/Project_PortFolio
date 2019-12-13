@@ -122,6 +122,7 @@
     min-height: 50px;
     z-index: 9999;
     @include transition(padding 0.6s ease-in-out, background 1s ease-in-out);
+
     @media (min-width: 768px) {
         .container {
             @include display-flex(flex);
@@ -176,7 +177,7 @@
             text-transform: uppercase;
             text-decoration: none;
             text-align: center;
-            color: #ea535a;
+            color: rgba(247,167,32, 1);
             @include transition(all 0.3s ease-in);
 
             &::after {
@@ -204,7 +205,7 @@
                 @include opacity(1);
                 height: 4px;
                 width: 50%;
-                background: #f73260;
+                background: rgba(247,167,32, 1);
             }
         }
         @media (min-width: 768px) {
@@ -222,7 +223,7 @@
 
     .navbar-dropdown {
         position: relative;
-        display: none;
+        // display: none;
         @media (min-width: 768px) {
             display: flex;
         }
@@ -405,7 +406,7 @@ footer {
             font: normal 1.4rem 'Teko', Helvetica, Arial, sans-serif;
             letter-spacing: 0.1em;
             margin: 0;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(247,167,32, 1);
         }
     }
 
@@ -413,7 +414,7 @@ footer {
         a {
             font-size: 1.4rem;
             padding: 0 0.5em;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(247,167,32, 1);
             @include transition(all 0.3s ease-in-out);
 
             i {
