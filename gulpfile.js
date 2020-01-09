@@ -42,7 +42,7 @@ gulp.task('minify-css', ['compass'], () => {
 
 // minify JS
 gulp.task('minify-js', () => {
-    return gulp.src('app/js/main.js')
+    return gulp.src('app/js/**/*')
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
@@ -55,7 +55,7 @@ gulp.task('minify-js', () => {
 
 // imagemin
 gulp.task('imagemin', () => {
-    return gulp.src('app/img/*')
+    return gulp.src('app/img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
 });
@@ -73,7 +73,7 @@ gulp.task('browserSync', () => {
 gulp.task('watch', ['browserSync', 'compass', 'minify-css', 'minify-js', 'imagemin'], () => {
     gulp.watch('app/sass/*.scss', ['compass']);
     gulp.watch('app/css/*.css', ['minify-css']);
-    gulp.watch('app/js/*.js', ['minify-js']);
+    gulp.watch('app/js/**/*.js', ['minify-js']);
 
     // Reloads browserSync whenever html or js files change
     gulp.watch('app/*.html', browserSync.reload);

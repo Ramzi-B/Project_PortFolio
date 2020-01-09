@@ -3,12 +3,16 @@
     /* Colors from https://coolors.co */
 
     /* Bright yellow Crayola */
-    --bkg-primary: #{rgba(247,167,32, 1)};
+    --bkg-primary: #{rgba(247, 167, 32, 1)};
+    --title-intro-color: #{rgba(247, 167, 32, 1)};
+
     /* Dark */
     --text-color: #{rgba(0, 0, 0, 1)};
+
     /* Royal blue */
     --bkg-header: #{rgba(3, 37, 108, 1)};
     --bkg-footer: #{rgba(3, 37, 108, 1)};
+
     /* Denim blue */
     --title-color: #{rgba(37, 65, 178, 1)};
 }

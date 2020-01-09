@@ -9,19 +9,19 @@
     <meta name="author" content="Ramzi-B">
     <meta name="keywords" content="Développeur intégrateur Web javascript php mysql html5 css3 front-end back-end">
     <!-- favicons from https://favicon.io/favicon-generator -->
-    <link rel="icon" href="/img/icons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
     <!-- Title -->
     <title>Ramzi.B | Développeur intégrateur Web</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="page-top">
@@ -36,7 +36,7 @@
                 <div class="navbar-heading">
                     <a href="#page-top" class="page-scroll">Ramzi.B</a>
                     <!-- Button menu -->
-                    <button type="button" class="navbar-toggle">
+                    <button type="button" class="navbar-trigger">
                         <span class="line"></span>
                         <span class="line"></span>
                         <span class="line"></span>
@@ -46,7 +46,7 @@
                 <nav class="navbar">
                     <!-- Dropdown menu -->
                     <div class="navbar-dropdown">
-                        <a href="#about" class="page-scroll active">About</a>
+                        <a href="#about" class="page-scroll ">About</a>
                         <a href="#skills" class="page-scroll">Skills</a>
                         <a href="#works" class="page-scroll">Works</a>
                         <a href="#contact" class="page-scroll">Contact</a>
@@ -170,12 +170,15 @@
 				<div class="form-group">
 					<input id="name" type="text" name="name" placeholder="NAME *" class="form-control" required>
 				</div>
+
 				<div class="form-group">
 					<input id="email" type="email" name="email" placeholder="EMAIL *" class="form-control" required>
 				</div>
+
 				<div class="form-group">
 					<textarea id="message" name="message" rows="8" placeholder="MESSAGE *" class="form-control" required></textarea>
 				</div>
+
 				<button type="submit" class="btn">Envoyer</button>
 			</form>
 
@@ -197,6 +200,9 @@
     </footer>
 
     <!-- js files -->
+    <script src="js/wordSlide.js"></script>
+    <script src="js/fixNavbar.js"></script>
+    <script src="js/dropdownMenu.js"></script>
     <script src="js/main.js"></script>
 </body>
 

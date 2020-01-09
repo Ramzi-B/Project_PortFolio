@@ -5,6 +5,7 @@
   /* Colors from https://coolors.co */
   /* Bright yellow Crayola */
   --bkg-primary: #f7a720;
+  --title-intro-color: #f7a720;
   /* Dark */
   --text-color: black;
   /* Royal blue */
@@ -147,7 +148,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
-  color: white;
+  color: var(--title-intro-color);
   text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
 }
 @media (min-width: 768px) {
@@ -268,10 +269,10 @@ a {
   width: 100%;
   min-height: 50px;
   z-index: 9999;
-  -moz-transition: padding 0.6s ease-in-out, background 1s ease-in-out;
-  -o-transition: padding 0.6s ease-in-out, background 1s ease-in-out;
-  -webkit-transition: padding 0.6s ease-in-out, background 1s ease-in-out;
-  transition: padding 0.6s ease-in-out, background 1s ease-in-out;
+  -moz-transition: padding 0.6s ease-in-out, background 1s ease-in-out, border 1.5s ease-in-out, box-shadow 1s ease-in-out;
+  -o-transition: padding 0.6s ease-in-out, background 1s ease-in-out, border 1.5s ease-in-out, box-shadow 1s ease-in-out;
+  -webkit-transition: padding 0.6s ease-in-out, background 1s ease-in-out, border 1.5s ease-in-out, box-shadow 1s ease-in-out;
+  transition: padding 0.6s ease-in-out, background 1s ease-in-out, border 1.5s ease-in-out, box-shadow 1s ease-in-out;
 }
 @media (min-width: 768px) {
   .navbar-top .container {
@@ -292,7 +293,7 @@ a {
   align-items: center;
   min-height: 50px;
 }
-.navbar-top .navbar-heading .navbar-toggle {
+.navbar-top .navbar-heading .navbar-trigger {
   border: 0;
   background: none;
   cursor: pointer;
@@ -302,11 +303,11 @@ a {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.navbar-top .navbar-heading .navbar-toggle:focus {
+.navbar-top .navbar-heading .navbar-trigger:focus {
   border: 0;
   outline: 0;
 }
-.navbar-top .navbar-heading .navbar-toggle .line {
+.navbar-top .navbar-heading .navbar-trigger .line {
   display: block;
   margin-bottom: 3px;
   height: 2px;
@@ -314,7 +315,7 @@ a {
   background: #ea535a;
 }
 @media (min-width: 768px) {
-  .navbar-top .navbar-heading .navbar-toggle {
+  .navbar-top .navbar-heading .navbar-trigger {
     display: none;
   }
 }
@@ -397,6 +398,7 @@ a {
 }
 .navbar-top .navbar-dropdown {
   position: relative;
+  display: none;
 }
 @media (min-width: 768px) {
   .navbar-top .navbar-dropdown {
@@ -409,10 +411,10 @@ a {
   margin: 0 auto;
   margin-bottom: 2em;
   border-radius: 50%;
-  border: 8px solid rgba(0, 123, 255, 0.3);
-  -moz-box-shadow: 0 0 2px 8px rgba(0, 123, 255, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
-  -webkit-box-shadow: 0 0 2px 8px rgba(0, 123, 255, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
-  box-shadow: 0 0 2px 8px rgba(0, 123, 255, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
+  border: 8px solid #03256c;
+  -moz-box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
+  -webkit-box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
+  box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
 }
 @media (min-width: 992px) {
   #about img {
@@ -459,11 +461,15 @@ a {
   width: 30%;
   padding: 1em;
   justify-content: center;
+  -moz-box-shadow: -7px 8px 15px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -7px 8px 15px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: -7px 8px 15px 2px rgba(0, 0, 0, 0.3);
 }
 #skills .skills__wrapper .skills-logo img {
   margin: 0 auto;
 }
 
+/* Works Section */
 /* Contact Section */
 #contact {
   margin: 0.1em;
@@ -520,7 +526,7 @@ a {
   font: 700 1.4rem 'Teko', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.4);
   overflow: hidden;

@@ -38,12 +38,15 @@ body {
 
 .container {
 	margin: 0 auto;
+
 	@media (min-width: 768px) {
 		width: 750px;
 	}
+
 	@media (min-width: 992px) {
 		width: 970px;
 	}
+    
 	@media (min-width: 1200px) {
 		width: 1170px;
 	}
@@ -65,9 +68,11 @@ a {
     text-transform: uppercase;
     color: var(--title-color);
     text-shadow: 0 4px 8px rgba(0,0,0, .6);
+
     @media (min-width: 768px) {
         font-size: 4rem;
     }
+
     @media (min-width: 992px) {
         font-size: 6rem;
     }
