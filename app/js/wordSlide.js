@@ -6,19 +6,19 @@ var words = ['developpeur web', 'php', 'sql', 'javascript', 'back end', 'front e
     index = 0;
 
 function onWordNext() {
-	index++;
-	elm.style.opacity = 0;
+    index++;
+    elm.style.opacity = 0;
 
-	if (index > (words.length - 1)) {
-		index = 0;
-	}
+    if (index > (words.length - 1)) {
+        index = 0;
+    }
 
-	setTimeout('onWordSlide()', 1000);
+    setTimeout('onWordSlide()', 1000);
 }
 
 function onWordSlide() {
-	elm.innerHTML = words[index];
-	elm.style.opacity = 1;
+    elm.innerHTML = words[index];
+    elm.style.opacity = 1;
 
-	setTimeout('onWordNext()', 2000);
+    setTimeout('onWordNext()', 2000);
 }

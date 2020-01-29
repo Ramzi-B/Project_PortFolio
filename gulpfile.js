@@ -27,7 +27,7 @@ gulp.task('compass', () => {
 
 // minify CSS
 gulp.task('minify-css', ['compass'], () => {
-    return gulp.src('app/css/style.css')
+    return gulp.src('app/css/**/*')
         .pipe(cleanCSS({
             compatibility: 'ie8' && 'ie9'
         }))

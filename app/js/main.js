@@ -8,6 +8,6 @@ navbarToggle.addEventListener('click', dropdownMenu);
 
 // WordSlide
 function init() {
-	onWordSlide();
+    onWordSlide();
 }
 setTimeout(init, 2000);
