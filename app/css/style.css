@@ -29,8 +29,8 @@ body {
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -411,10 +411,11 @@ a {
   margin: 0 auto;
   margin-bottom: 2em;
   border-radius: 50%;
+  background: #03256c;
   border: 8px solid #03256c;
-  -moz-box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
-  -webkit-box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
-  box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1);
+  -moz-box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.5), 0 0 4px 16px rgba(0, 123, 255, 0.3);
+  -webkit-box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.5), 0 0 4px 16px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 2px 8px rgba(3, 37, 108, 0.5), 0 0 4px 16px rgba(0, 123, 255, 0.3);
 }
 @media (min-width: 992px) {
   #about img {
@@ -507,7 +508,7 @@ a {
   padding: 1.5em;
   background: transparent;
   outline: 0;
-  color: #726659;
+  color: #2541b2;
   border: 1px solid rgba(0, 0, 0, 0.3);
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -522,13 +523,13 @@ a {
 }
 #contact .btn {
   position: relative;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   font: 700 1.4rem 'Teko', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
   color: black;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 2px solid #03256c;
   overflow: hidden;
   background: transparent;
   -moz-border-radius: 0.4rem;
@@ -538,12 +539,15 @@ a {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
 }
 #contact .btn:hover {
-  color: red;
-  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  color: white;
+  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px transparent;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px transparent;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px transparent;
 }
 #contact .btn:before {
   content: '';
@@ -569,7 +573,7 @@ a {
   height: 100%;
   top: 0;
   right: -100%;
-  background: white;
+  background: #2541b2;
   z-index: -1;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;

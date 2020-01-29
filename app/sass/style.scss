@@ -244,8 +244,9 @@
 		margin: 0 auto;
         margin-bottom: 2em;
 		border-radius: 50%;
+        background: rgba(3, 37, 108, 1);
 		border: 8px solid rgba(3, 37, 108, 1);
-		@include box-shadow(0 0 2px 8px rgba(3, 37, 108, 0.3), 0 0 4px 16px rgba(0, 123, 255, 0.1));
+		@include box-shadow(0 0 2px 8px rgba(3, 37, 108, 0.5), 0 0 4px 16px rgba(0, 123, 255, 0.3));
 
         @media (min-width: 992px) {
             float: left;
@@ -340,7 +341,7 @@
 			padding: 1.5em;
 			background: transparent;
 			outline: 0;
-			color: #726659;
+			color: rgba(37, 65, 178, 1);
 			border: 1px solid rgba(0,0,0, .3);
 			@include transition(all 0.3s ease-in-out);
 
@@ -353,21 +354,22 @@
 
 	.btn {
 		position: relative;
-		padding: .5em 1em;
+		padding: 0.5em 1em;
 		font: 700 1.4rem 'Teko', Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
 		text-align: center;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.1em;
 		color: black;
-		border: 1px solid rgba(0,0,0, .4);
+		border: 2px solid rgba(3, 37, 108, 1);
 		overflow: hidden;
 		background: transparent;
 		@include border-radius(0.4rem);
 		@include transition(all 0.3s ease-in-out);
+        @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7));
 
 		&:hover {
-			color: red;
-			@include box-shadow(0 2px 6px rgba(0, 0, 0, .8));
+			color: white;
+			@include box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0));
 		}
 
 		&:before {
@@ -393,7 +395,7 @@
 			height: 100%;
 			top: 0;
 			right: -100%;
-			background: white;
+			background: rgba(37, 65, 178, 1);
 			z-index: -1;
 			@include transition(all 0.3s ease-in-out);
 		}

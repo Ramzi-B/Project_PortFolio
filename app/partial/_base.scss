@@ -19,8 +19,8 @@ body {
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
 	@include box-sizing(border-box);
 	@include transition(all 0.3s ease-in-out);
 	// border: 1px dotted rgba(255, 255, 255, .5);
@@ -46,7 +46,7 @@ body {
 	@media (min-width: 992px) {
 		width: 970px;
 	}
-    
+
 	@media (min-width: 1200px) {
 		width: 1170px;
 	}
